@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #242333;
+  color: white;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: 'Miltonian Tattoo', cursive;
+}
+.menu li .seat {
+  cursor: default;
+}
+
+.menu li .seat:hover {
+  transform: scale(1);
+}
+.container {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  perspective: 1200px;
+}
+
+.movie-container {
+  width: 500px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-container label {
+  padding: 10px;
+}
+
+#movie {
+  text-align-last: center;
+  padding: 7px;
+  outline: none;
+
+}
+
+.legend {
+  margin: 0px;
+  padding: 0px;
+  width: 500px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 5px #242333;
+  display: flex;
+  background-color: #777;
+  border-color: black;
+  padding: 10px;
+
+}
+
+.menu li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  width: 250px;
+  height: 120px;
+  background-color: antiquewhite;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255,255,255,0.7);
+}
+.seats {
+  margin-top: 15px;
+}
+.seat {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(11, 10, 10);
+  margin: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.seat:hover {
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+}
+
+.seat.occupied {
+  background-color: antiquewhite;
+  cursor: default;
+}
+
+.seat.selected {
+  background-color: aqua;
+}
+
+#selectedSeatsLabel, #priceSeatsLabel{
+  color: aquamarine;
+  font-size: 22px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 25px;
+}
+
+.seat:nth-last-child(2) {
+  margin-left: 25px
+}
+
+.seat:not(.occupied):hover {
+  transform: scale(1.2);
+}
+
+.clearDataBTN {
+  padding: 10px;
+  width: 30%;
+  background-color: #2ECC71;
+  border: none;
+}
+
+.clearDataBTN:active {
+  background-color: #db343f;
+}
